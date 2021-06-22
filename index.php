@@ -2,13 +2,13 @@
 //  Connection Section ..
 // Connection With LocalHost .. 
 
-$Lusername="phpmyadmin";//change username 
-$Lpassword="Vivek@7840"; //change password
-$Lhost="localhost";
+// $Lusername="phpmyadmin";//change username 
+// $Lpassword="Vivek@7840"; //change password
+// $Lhost="localhost";
 
-$Ldb_name="MyDb"; //change databasename
+// $Ldb_name="MyDb"; //change databasename
 
-$connectLhost=mysqli_connect($Lhost,$Lusername,$Lpassword,$Ldb_name); 
+// $connectLhost=mysqli_connect($Lhost,$Lusername,$Lpassword,$Ldb_name); 
 
 
 //  Connection With Server.. 
@@ -30,7 +30,7 @@ $connectLhost=mysqli_connect($Lhost,$Lusername,$Lpassword,$Ldb_name);
 
 //  Check table is preseint or not
 
-$query = "CREATE TABLE IF NOT EXISTS `MyDb`.`REGISTER`(`SR` INT NOT NULL  PRIMARY KEY AUTO_INCREMENT ,`NAME` TEXT(15) NOT NULL,`MOBILE` Text(12)  ,`EMAIL` VARCHAR(20) NOT NULL , `PASSWORD` VARCHAR(20) NOT NULL)";
+// $query = "CREATE TABLE IF NOT EXISTS `MyDb`.`REGISTER`(`SR` INT NOT NULL  PRIMARY KEY AUTO_INCREMENT ,`NAME` TEXT(15) NOT NULL,`MOBILE` Text(12)  ,`EMAIL` VARCHAR(20) NOT NULL , `PASSWORD` VARCHAR(20) NOT NULL)";
 
 //  Create Table If Not Present 
 
@@ -48,23 +48,23 @@ $action = "fetchData";
 //---___--____---____--___-_____---____--____---____---____--___--____---___--___--______--___- 
 
 
-if($action == "AddData"){
-    $name =  $_POST['fullname'];
-    $email =   $_POST['email'];
-    $mobile = $_POST['mobile'];
-    $password = $_POST['password'];
+// if($action == "AddData"){
+//     $name =  $_POST['fullname'];
+//     $email =   $_POST['email'];
+//     $mobile = $_POST['mobile'];
+//     $password = $_POST['password'];
 
-    $queryInsert = "INSERT INTO `REGISTER`(`NAME` , `MOBILE`, `EMAIL`,`PASSWORD`) VALUES('$name','$mobile', '$email','$password')"; 
-    $results = mysqli_query($connect, $queryInsert); 
+//     $queryInsert = "INSERT INTO `REGISTER`(`NAME` , `MOBILE`, `EMAIL`,`PASSWORD`) VALUES('$name','$mobile', '$email','$password')"; 
+//     $results = mysqli_query($connect, $queryInsert); 
 
-    if($results){
+//     if($results){
         
-    }else{
-        echo mysqli_connect_error();
-    }
-}else{
-    echo mysqli_connect_error();
-}
+//     }else{
+//         echo mysqli_connect_error();
+//     }
+// }else{
+//     echo mysqli_connect_error();
+// }
 
 
 //  --___---____---___-__----___---___---___---__---___--__--___--___--___--__--___-___--__-
