@@ -88,5 +88,5 @@ if($action == "AddData"){
 $cur_dir = getcwd();
   
 // displaying current directory
-echo $cur_dir ;
+echo "Curr Dir : " . $cur_dir ;
 ?> 
