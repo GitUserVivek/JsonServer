@@ -41,8 +41,8 @@ $query = "CREATE TABLE IF NOT EXISTS `MyDb`.`REGISTER`(`SR` INT NOT NULL  PRIMAR
 // }
 
 // Bhava sang yala table krych ka update ka create ka delete... 
-$action =  $_POST['query']; 
-// $action = "fetchData"; 
+// $action =  $_POST['query']; 
+$action = "fetchData"; 
 
 
 //---___--____---____--___-_____---____--____---____---____--___--____---___--___--______--___- 
