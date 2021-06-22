@@ -72,18 +72,19 @@ if($action == "AddData"){
 
 //  FETCH DATA  FRON SERVER FOR LOGIN ..
 
-if($action == 'fetchData'){
-   $fetchQuery = "SELECT `NAME` , `PASSWORD` FROM `REGISTER`";
-   $FetchResult = mysqli_query($connectLhost , $fetchQuery);
-   $data = array();
-   if($FetchResult->num_rows > 0){
-    while($row = $FetchResult->fetch_assoc()){
-        $data[]  = $row;  
-    } 
-   echo json_encode($data);
-   }else{
-    echo "Cant FetchData";
-   }
-}                
+// if($action == 'fetchData'){
+//    $fetchQuery = "SELECT `NAME` , `PASSWORD` FROM `REGISTER`";
+//    $FetchResult = mysqli_query($connectLhost , $fetchQuery);
+//    $data = array();
+//    if($FetchResult->num_rows > 0){
+//     while($row = $FetchResult->fetch_assoc()){
+//         $data[]  = $row;  
+//     } 
+//    echo json_encode($data);
+//    }else{
+//     echo "Cant FetchData";
+//    }
+// }                
 
+echo getchwd();
 ?> 
