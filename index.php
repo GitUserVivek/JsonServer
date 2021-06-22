@@ -85,6 +85,8 @@ if($action == "AddData"){
 //     echo "Cant FetchData";
 //    }
 // }                
-
-echo getchwd();
+$cur_dir = getcwd();
+  
+// displaying current directory
+echo $cur_dir ;
 ?> 
